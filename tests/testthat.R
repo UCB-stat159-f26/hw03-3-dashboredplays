@@ -1,4 +1,4 @@
 library(testthat)
-library(average)
+library(tennisplot)
 
 test_check("tennisplot")
