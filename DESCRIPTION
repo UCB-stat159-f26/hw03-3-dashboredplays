@@ -1,0 +1,10 @@
+Package: average
+Type: Package
+Title: HW3: Plot Tennis Matches by Person
+Version: 0.1.0
+Author: Matthew Chang
+Maintainer: Matthew Chang <matthew_chang@berkeley.edu>
+Description: Get a player's matches from the website tennisabstract.com and plot the player's age versus the age difference with each opponent, showing wins and losses.
+License: MIT
+Imports:
+    ggplot2
