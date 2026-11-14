@@ -6,6 +6,7 @@ parse_career_js <- function(js_text) {
   do.call(rbind, lapply(rows, function(r) gsub("\"", "", regmatches(r, gregexpr("\"[^\"]*\"", r))[[1]])[1:17])) # Want to normalize rows and only need first 17 columns
 }
 
+# changes to age in decimal format
 opponent_age <- function(dates, col17) {
   if (in_dob_format(col17)) {
     return(as.numeric(dates - as.Date(col17, "%Y%m%d")) / 365.25)
