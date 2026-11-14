@@ -1,0 +1,3 @@
+Model used: Claude Opus 5.5 Medium
+
+- I was unsure why tests were giving me so many warnings, and it said it may have been due to previous package downloads and harmless "incomplete final lines" in the test. I added a warn = FALSE.
