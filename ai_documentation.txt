@@ -1,5 +1,7 @@
 Model used: Claude Opus 5.5 Medium
 
+- When trying to find the date of birth initially, I noticed that the website had the data available, but I wasn't too sure how to extract it. I got some help on getting the name and DOB, and the breakout is shown in the sandbox file.
+- I iterated with it for a bit to take my code from homework 2 and generalize it to get the data ready for plotting, since data for women and men were slightly different. I wrote about this in the README data portion.
 - I was unsure why tests were giving me so many warnings, and it said it may have been due to previous package downloads and harmless "incomplete final lines" in the test. I added a warn = FALSE.
 - I wanted some guidance on the tests to make sure I was hitting everything needed. I iterated for a bit on this and it helped give me ideas on what to test, along with providing the intended outcome of the data frame numbers, which I verified.
 - There was an issue with testing Serena Williams where one of the 8-digit dates was slightly off the correct formatting. in_dob_format was changed to have `!any(grepl(".", values, fixed = TRUE))` which checks for periods. Men's data will have a period because of the decimal age representation, but women's won't.
