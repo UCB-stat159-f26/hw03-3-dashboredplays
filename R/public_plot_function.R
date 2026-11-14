@@ -1,5 +1,6 @@
 plot_player_matches <- function(matches) {
-  ggplot2::ggplot(matches, aes(x = player_age, y = age_diff, color = result)) + 
+  player <- matches$player[1] # get name
+  ggplot2::ggplot(matches, ggplot2::aes(x = player_age, y = age_diff, color = result)) + 
   ggplot2::geom_point() +
   ggplot2::scale_color_manual(
     name   = "Result",

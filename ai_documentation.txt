@@ -2,3 +2,4 @@ Model used: Claude Opus 5.5 Medium
 
 - I was unsure why tests were giving me so many warnings, and it said it may have been due to previous package downloads and harmless "incomplete final lines" in the test. I added a warn = FALSE.
 - I wanted some guidance on the tests to make sure I was hitting everything needed. I iterated for a bit on this and it helped give me ideas on what to test, along with providing the intended outcome of the data frame numbers, which I verified.
+- There was an issue with testing Serena Williams where one of the 8-digit dates was slightly off the correct formatting. in_dob_format was changed to have `!any(grepl(".", values, fixed = TRUE))` which checks for periods. Men's data will have a period because of the decimal age representation, but women's won't.
